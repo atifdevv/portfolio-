@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atif new website</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;a-brands{
+    color: #bbb;
+    font-si
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+.atif-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+}
+.left-container{
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+}
+.right-container{
+    background: linear-gradient(-45deg,#3877ff,#262525 70%);
+    width: 30%;
+}
+.left-container,.right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.icons,fa-brands {
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.content{
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content .intro span{
+    color: #5db9ee;
+}
+.content h1{
+    font-size: 4rem;
+    color: #5db9ee;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn-container button{
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem; 
+    padding: .8rem 1.5rem;
+    border-radius:.5rem;
+    cursor: pointer;
+    transition: 6s ease;
+}
+button:nth-child(1){
+    background: #5db9ee;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5db9ee;
+}
+button:nth-child(2):hover{
+    background: #5db9ee;
+    color: #262525;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+aspect-ratio: 1.0;
+position: absolute;
+border-radius: 50%;
+top: 56%;
+left: 70%;
+transform: translate(-50%,-50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(#262525 50%);
+    width: 37rem;
+}
+.circle:nth-child(2){
+    background-image: url("./image/WIN_20250616_03_13_04_Pro.jpg");
+    width: 30rem;
+    background-size: 110%; background-repeat: no-repeat;
+    border: 1rem solid white;
+    box-shadow: 0 0 1rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff,
+    0 0 4rem #3877ff,
+    inset 0 0 4rem #3877ff
+    ;
+}
+.navlist li a::after , .navlist .active::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+.navlist li a:hover::after , .navlist .active::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+    </style>
+</head>
+<body>
+<div class="atif-container">
+    <ul class="navlist">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Service</a></li>
+    </ul>
+    <div class="left-container">
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-codepen"></i>
+        </div>
+        <div class="content">
+            <p class="intro">Hi ! I am <span>Atif Khokhar</span></p>
+            <h1>Web Developer.</h1>
+            <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias veritatis libero commodi dolore impedit minus optio quaerat ab fugiat exercitationem.</p>
+            <div class="btn-container">
+                <button>Hire me</button>
+                <button>View project</button>
+            </div>
+        </div>
+</div>    
+        <div class="right-container"></div>
+        <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>
